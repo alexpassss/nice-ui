@@ -1,0 +1,26 @@
+{
+  "name": "nice-ui",
+  "version": "0.0.1",
+  "description": "Powerful CSS framework for creation nice and non-trivial UI. Flexible, simple and modern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexpassss/nice-ui.git"
+  },
+  "keywords": [
+    "CSS",
+    "framework",
+    "UI",
+    "framework",
+    "styling"
+  ],
+  "author": "Oleksiy Pastukhov (@alexpassss)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpassss/nice-ui/issues"
+  },
+  "homepage": "https://github.com/alexpassss/nice-ui"
+}
