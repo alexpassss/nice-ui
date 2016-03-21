@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/alexpassss/nice-ui/issues"
   },
-  "homepage": "https://github.com/alexpassss/nice-ui"
+  "homepage": "https://github.com/alexpassss/nice-ui",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-myth": "^1.0.1",
+    "grunt-sass": "^1.1.0"
+  }
 }
