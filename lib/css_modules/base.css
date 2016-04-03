@@ -1,3 +1,5 @@
+/* Fonts settings */
+
 html,
 body,
 div,
@@ -126,4 +128,73 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Temporary stylesheets */
+
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+  display: block;
+}
+
+.float-right {
+  float: right;
+  display: block;
+}
+
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+html {
+  font-family: Verdana;
+  font-size: 14px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
 }

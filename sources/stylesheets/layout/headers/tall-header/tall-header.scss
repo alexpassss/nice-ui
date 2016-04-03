@@ -1,0 +1,10 @@
+@import "tall-header-settings.scss";
+
+.tall-header {
+	height: $tallHeaderHeight;
+	&.withBackgroundImage {
+		background-image: $tallHeaderBgImage;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
