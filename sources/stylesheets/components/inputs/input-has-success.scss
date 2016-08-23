@@ -1,0 +1,12 @@
+.input {
+    &.has-success {
+        border-color: $color-success;
+        color: $color-success;
+        &:hover {
+            border-color: $color-success-light;
+        }
+        &:focus {
+            border-color: $color-success-dark;
+        }
+    }
+}

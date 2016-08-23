@@ -1,0 +1,6 @@
+.label {
+    &.size-inherit {
+        padding: $label-size-inherit-padding-top-bottom $label-size-inherit-padding-left-right;
+        font-size: $label-size-inherit-font-size;
+    }
+}

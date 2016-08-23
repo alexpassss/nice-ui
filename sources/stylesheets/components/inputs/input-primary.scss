@@ -1,0 +1,13 @@
+.btn {
+    &.btn-primary {
+        border-color: $color-first;
+        &:hover {
+            border-color: $color-fourth;
+            color: $color-extra-dark;
+        }
+        &:focus {
+            color: $color-extra-dark;
+            border-color: $color-fourth;
+        }
+    }
+}

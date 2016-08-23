@@ -8,7 +8,7 @@ module.exports = function(grunt) {
           files: [
               {outputstyle: '', expand: true, cwd: 'sources/stylesheets/base/', src: ['base.scss'], dest: 'lib/css_modules', ext: '.css'},
               {outputstyle: '', expand: true, cwd: 'sources/stylesheets/layout/', src: ['layout.scss'], dest: 'lib/css_modules', ext: '.css'},
-              {outputstyle: '', expand: true, cwd: 'sources/stylesheets/modules/', src: ['modules.scss'], dest: 'lib/css_modules', ext: '.css'}
+              {outputstyle: '', expand: true, cwd: 'sources/stylesheets/components/', src: ['components.scss'], dest: 'lib/css_modules', ext: '.css'}
           ]
       }
     },
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     concat: {
       apps: {
           src: 'lib/css_modules/*.css',
-          dest: 'lib/dist/nice-ui.css'
+          dest: 'lib/dist/qhq-ui.css'
       }
     },
 

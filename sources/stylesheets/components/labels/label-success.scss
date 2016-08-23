@@ -1,0 +1,11 @@
+.label {
+    &.label-success {
+        background: $color-success;
+        &.label-bordered,
+        &.label-bordered-fat {
+            background: $color-white;
+            border-color: $color-success;
+            color: $color-success;
+        }
+    }
+}

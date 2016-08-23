@@ -1,0 +1,42 @@
+mark, .marked {
+    color: $color-dark;
+    padding: .2em;
+    background-color: $color-first;
+}
+
+del, .deleted {
+    text-decoration: line-through;
+}
+
+s, .strikethrough {
+    text-decoration: line-through;
+}
+
+ins, .inserted {
+    text-decoration: underline;
+}
+
+u, .underlined {
+    text-decoration: underline;
+}
+
+small, .small {
+    font-size: 85%;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+abbr[data-original-title], abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted $color-dark;
+    &.initialism {
+        font-size: 90%;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,12 @@
+.btn {
+    &.btn-secondary {
+        background: $color-second;
+        color: $color-extra-dark;
+        &:hover {
+            background: $color-first;
+        }
+        &:active {
+            background: $color-third;
+        }
+    }
+}

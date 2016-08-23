@@ -1,0 +1,25 @@
+.breadcrumb {
+    display: block;
+    background: $color-extra-light;
+    list-style: none;
+    padding: $breadcrumb-padding-top-bottom $breadcrumb-padding-left-right;
+    li {
+        display: inline-block;
+        font-size: $breadcrumb-font-size;
+        &:not(:first-child) {
+            &:before {
+                margin-right: 0.3125rem;
+                display: inline;
+                content: '/';
+                color: $color-dark;
+            }
+        }
+        &.active {
+            color: $color-dark;
+        }
+        a {
+            color: $color-first;
+            text-decoration: none;
+        }
+    }
+}

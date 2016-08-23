@@ -1,0 +1,70 @@
+.btn {
+    &.icon-left {
+        padding: $btn-md-icon-padding-top $btn-md-icon-left-padding-right $btn-md-icon-padding-bottom $btn-md-icon-left-padding-left;
+        i {
+            margin-right: $btn-md-icon-margin-right;
+        }
+    }
+    &.icon-right {
+        padding: $btn-md-icon-padding-top $btn-md-icon-right-padding-right $btn-md-icon-padding-bottom $btn-md-icon-right-padding-left;
+        i {
+            margin-left: $btn-md-icon-margin-left;
+        }
+    }
+    &.btn-xs {
+        &.icon-left {
+            padding: $btn-xs-icon-padding-top $btn-xs-icon-left-padding-right $btn-xs-icon-padding-bottom $btn-xs-icon-left-padding-left;
+            i {
+                margin-right: $btn-xs-icon-margin-right;
+            }
+        }
+        &.icon-right {
+            padding: $btn-xs-icon-padding-top $btn-xs-icon-right-padding-right $btn-xs-icon-padding-bottom $btn-xs-icon-right-padding-left;
+            i {
+                margin-left: $btn-xs-icon-margin-left;
+            }
+        }
+    }
+    &.btn-sm {
+        &.icon-left {
+            padding: $btn-sm-icon-padding-top $btn-sm-icon-left-padding-right $btn-sm-icon-padding-bottom $btn-sm-icon-left-padding-left;
+            i {
+                margin-right: $btn-sm-icon-margin-right;
+            }
+        }
+        &.icon-right {
+            padding: $btn-sm-icon-padding-top $btn-sm-icon-right-padding-right $btn-sm-icon-padding-bottom $btn-sm-icon-right-padding-left;
+            i {
+                margin-left: $btn-sm-icon-margin-left;
+            }
+        }
+    }
+    &.btn-md {
+        &.icon-left {
+            padding: $btn-md-icon-padding-top $btn-md-icon-left-padding-right $btn-md-icon-padding-bottom $btn-md-icon-left-padding-left;
+            i {
+                margin-right: $btn-md-icon-margin-right;
+            }
+        }
+        &.icon-right {
+            padding: $btn-md-icon-padding-top $btn-md-icon-right-padding-right $btn-md-icon-padding-bottom $btn-md-icon-right-padding-left;
+            i {
+                margin-left: $btn-md-icon-margin-left;
+            }
+        }
+    }
+    &.btn-lg {
+        &.icon-left {
+            padding: $btn-lg-icon-padding-top $btn-lg-icon-left-padding-right $btn-lg-icon-padding-bottom $btn-lg-icon-left-padding-left;
+            i {
+                margin-right: $btn-lg-icon-margin-right;
+            }
+        }
+        &.icon-right {
+            padding: $btn-lg-icon-padding-top $btn-lg-icon-right-padding-right $btn-lg-icon-padding-bottom $btn-lg-icon-right-padding-left;
+            i {
+                margin-left: $btn-lg-icon-margin-left;
+            }
+        }
+    }
+}

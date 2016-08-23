@@ -1,0 +1,10 @@
+.label {
+    &.label-danger {
+        background: $color-danger;
+        &.label-bordered,
+        &.label-bordered-fat {
+            border-color: $color-danger;
+            color: $color-danger;
+        }
+    }
+}

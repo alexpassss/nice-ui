@@ -1,0 +1,15 @@
+.btn {
+    &.btn-dark {
+        background: $color-extra-dark;
+        color: $color-first;
+        &.inverse {
+            color: $color-white;
+        }
+        &:hover {
+            background: $color-dark;
+        }
+        &:active {
+            background: $color-black;
+        }
+    }
+}

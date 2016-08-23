@@ -1,0 +1,148 @@
+.input {
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    border-style: solid;
+        background: $color-white;
+	    border-width: $input-border-width;
+	    border-color: $color-first;
+	    color: $color-extra-dark;
+	    display: block;
+	    font-family: inherit;
+	    font-size: $input-font-size;
+        line-height: $input-line-height;
+	    padding: $input-padding-top-bottom $input-padding-left-right;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+	    -moz-transition: border-color 0.15s linear, background 0.15s linear;
+	    -ms-transition: border-color 0.15s linear, background 0.15s linear;
+	    -o-transition: border-color 0.15s linear, background 0.15s linear;
+	    transition: border-color 0.15s linear, background 0.15s linear;
+        &[placeholder] {
+            text-overflow: ellipsis;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &::-webkit-input-placeholder {
+            color: $color-light;
+            text-overflow: ellipsis;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &::-moz-placeholder {
+            color: $color-light;
+            text-overflow: ellipsis;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &:-moz-placeholder {
+            color: $color-light;
+            text-overflow: ellipsis;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &:-ms-input-placeholder {
+            color: $color-light;
+            text-overflow: ellipsis;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        &:hover {
+            border-color: $color-fourth;
+            color: $color-extra-dark;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            color: $color-extra-dark;
+            border-color: $color-fourth;
+            &::-webkit-input-placeholder {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            &::-moz-placeholder {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            &:-moz-placeholder {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            &:-ms-input-placeholder {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+        }
+        &[disabled] {
+    		background: #F6F6F6;
+    	}
+        &.input-xs {
+            padding: $input-xs-padding-top-bottom $input-xs-padding-left-right;
+            font-size: $input-xs-font-size;
+            line-height: $input-xs-line-height;
+            &::-webkit-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &::-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-ms-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+        }
+        &.input-sm {
+            padding: $input-sm-padding-top-bottom $input-sm-padding-left-right;
+            font-size: $input-sm-font-size;
+            line-height: $input-sm-line-height;
+            &::-webkit-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &::-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-ms-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+        }
+        &.input-md {
+            padding: $input-md-padding-top-bottom $input-md-padding-left-right;
+            font-size: $input-md-font-size;
+            line-height: $input-md-line-height;
+            &::-webkit-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &::-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-ms-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+        }
+        &.input-lg {
+            padding: $input-lg-padding-top-bottom $input-lg-padding-left-right;
+            font-size: $input-lg-font-size;
+            line-height: $input-lg-line-height;
+            &::-webkit-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &::-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-moz-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+            &:-ms-input-placeholder {
+                padding: $input-placeholder-padding-top-bottom 0;
+            }
+        }
+	}

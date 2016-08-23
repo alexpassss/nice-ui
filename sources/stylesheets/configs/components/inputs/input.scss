@@ -1,0 +1,38 @@
+$input-placeholder-padding-top-bottom: 0.1875rem;
+
+$input-border-width: 0.0625rem;
+$input-fat-border-width: 0.125rem;
+$input-font-size: 1rem;
+$input-line-height: 1rem;
+$input-padding-top-bottom: 0.625rem - $input-border-width;
+$input-padding-left-right: 0.9375rem - $input-border-width;
+$input-fat-padding-top-bottom: 0.625rem - $input-fat-border-width;
+$input-fat-padding-left-right: 0.9375rem - $input-fat-border-width;
+
+$input-lg-font-size: 1.125rem;
+$input-lg-line-height: 1.125rem;
+$input-lg-padding-top-bottom: 0.9375rem - $input-border-width;
+$input-lg-padding-left-right: 1.563rem - $input-border-width;
+$input-lg-fat-padding-top-bottom: 0.9375rem - $input-fat-border-width;
+$input-lg-fat-padding-left-right: 1.563rem - $input-fat-border-width;
+
+$input-md-font-size: 1rem;
+$input-md-line-height: 1rem;
+$input-md-padding-top-bottom: 0.625rem - $input-border-width;
+$input-md-padding-left-right: 0.9375rem - $input-border-width;
+$input-md-fat-padding-top-bottom: 0.625rem - $input-fat-border-width;
+$input-md-fat-padding-left-right: 0.9375rem - $input-fat-border-width;
+
+$input-sm-font-size: 0.75rem;
+$input-sm-line-height: 0.75rem;
+$input-sm-padding-top-bottom: 0.375rem - $input-border-width;
+$input-sm-padding-left-right: 0.6875rem - $input-border-width;
+$input-sm-fat-padding-top-bottom: 0.375rem - $input-fat-border-width;
+$input-sm-fat-padding-left-right: 0.6875rem - $input-fat-border-width;
+
+$input-xs-font-size: 0.75rem;
+$input-xs-line-height: 0.75rem;
+$input-xs-padding-top-bottom: 0.3125rem - $input-border-width;
+$input-xs-padding-left-right: 0.625rem - $input-border-width;
+$input-xs-fat-padding-top-bottom: 0.3125rem - $input-fat-border-width;
+$input-xs-fat-padding-left-right: 0.625rem - $input-fat-border-width;

@@ -1,0 +1,12 @@
+.btn {
+    &.btn-success {
+        background: $color-success;
+        color: $color-white;
+        &:hover {
+            background: $color-success-light;
+        }
+        &:active {
+            background: $color-success-dark;
+        }
+    }
+}

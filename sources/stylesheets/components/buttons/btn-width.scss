@@ -1,0 +1,26 @@
+.btn {
+    &.btn-width-lg {
+        width: $btn-width-lg;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &.btn-width-md {
+        width: $btn-width-md;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &.btn-width-sm {
+        width: $btn-width-sm;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &.btn-width-xs {
+        width: $btn-width-xs;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

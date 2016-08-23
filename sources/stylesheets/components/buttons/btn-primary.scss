@@ -1,0 +1,21 @@
+.btn {
+    &.btn-primary {
+        background: $color-first;
+        color: $color-extra-dark;
+        &:hover {
+            background: $color-fourth;
+        }
+        &:active {
+            background: $color-second;
+        }
+        &.border-bottom {
+            border-bottom: 3px solid $color-second;
+            &:hover {
+                border-bottom: 3px solid $color-fourth;
+            }
+            &:active {
+                border-bottom: 3px solid $color-second;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.badge {
+    border-radius: 100%;
+    display: inline-block;
+    padding: $badge-padding;
+    font-size: $badge-font-size;
+    line-height: $badge-line-height;
+    background: $color-first;
+    color: $color-white;
+    text-align: center;
+    &.badge-xs {
+        padding: $badge-xs-padding;
+        font-size: $badge-xs-font-size;
+        line-height: $badge-xs-line-height;
+    }
+    &.badge-sm {
+        padding: $badge-sm-padding;
+        font-size: $badge-sm-font-size;
+        line-height: $badge-sm-line-height;
+    }
+    &.badge-md {
+        padding: $badge-padding;
+        font-size: $badge-font-size;
+        line-height: $badge-line-height;
+    }
+    &.badge-lg {
+        padding: $badge-lg-padding;
+        font-size: $badge-lg-font-size;
+        line-height: $badge-lg-line-height;
+    }
+}

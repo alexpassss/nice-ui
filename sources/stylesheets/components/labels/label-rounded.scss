@@ -1,0 +1,17 @@
+.label {
+    &.label-rounded {
+        border-radius: $label-rounded-md-border-radius;
+        &-xs {
+            border-radius: $label-rounded-xs-border-radius;
+        }
+        &-sm {
+            border-radius: $label-rounded-sm-border-radius;
+        }
+        &-md {
+            border-radius: $label-rounded-md-border-radius;
+        }
+        &-lg {
+            border-radius: $label-rounded-lg-border-radius;
+        }
+    }
+}

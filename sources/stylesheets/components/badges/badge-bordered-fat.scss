@@ -1,0 +1,10 @@
+.badge {
+    &.badge-bordered-fat {
+        border: $badge-bordered-fat-border-width solid $color-first;
+        color: $color-first;
+        background: $color-white;
+        &.transparent {
+            background: transparent;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.label {
+    &.label-primary {
+        background: $color-first;
+        &.label-bordered,
+        &.label-bordered-fat {
+            border-color: $color-first;
+            color: $color-first;
+        }
+    }
+}

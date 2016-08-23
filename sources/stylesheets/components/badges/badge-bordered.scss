@@ -1,0 +1,10 @@
+.badge {
+    &.badge-bordered {
+        border: $badge-bordered-border-width solid $color-first;
+        color: $color-first;
+        background: $color-white;
+        &.transparent {
+            background: transparent;
+        }
+    }
+}

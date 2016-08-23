@@ -1,0 +1,16 @@
+pre {
+    display: block;
+    padding: $code-block-padding;
+    font-size: $code-block-font-size;
+    line-height: $code-block-line-height;
+    color: $color-extra-dark;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: $color-extra-light;
+    border: $code-block-border-width solid $color-light;
+    border-radius: $code-block-border-radius;
+}
+
+xmp {
+    margin: 0;
+}

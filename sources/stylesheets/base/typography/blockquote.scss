@@ -1,0 +1,20 @@
+blockquote,
+.blockquote {
+    padding: $blockquote-padding-top-bottom $blockquote-padding-left-right;
+    margin: 0 0 $blockquote-margin-right;
+    border-left: $blockquote-border-width solid $color-light;
+    line-height: $blockquote-line-height;
+    font-size: $blockquote-font-size;
+    &.blockquote-reverse {
+        text-align: right;
+        border-left: 0;
+        border-right: $blockquote-border-width solid $color-light;
+    }
+    footer {
+        margin-top: $blockquote-footer-margin-top;
+        color: $color-dark;
+    }
+    cite {
+        font-style: italic;
+    }
+}

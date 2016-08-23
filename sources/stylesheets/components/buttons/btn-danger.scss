@@ -1,0 +1,12 @@
+.btn {
+    &.btn-danger {
+        background: $color-danger;
+        color: $color-white;
+        &:hover {
+            background: $color-danger-light;
+        }
+        &:active {
+            background: $color-danger-dark;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.input {
+    &[disabled] {
+        background: $color-extra-light;
+        border-color: $color-light;
+        cursor: not-allowed;
+        &:hover {
+            background: $color-extra-light;
+            border-color: $color-light;
+        }
+        &:focus {
+            background: $color-extra-light;
+            border-color: $color-light;
+        }
+    }
+}

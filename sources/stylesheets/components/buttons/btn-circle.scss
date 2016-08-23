@@ -1,0 +1,30 @@
+.btn {
+    &.btn-circle {
+        border-radius: 100%;
+        padding: $btn-md-circle-padding;
+    }
+    &.btn-xs {
+        &.btn-circle {
+            border-radius: 100%;
+            padding: $btn-xs-circle-padding;
+        }
+    }
+    &.btn-sm {
+        &.btn-circle {
+            border-radius: 100%;
+            padding: $btn-sm-circle-padding;
+        }
+    }
+    &.btn-md {
+        &.btn-circle {
+            border-radius: 100%;
+            padding: $btn-md-circle-padding;
+        }
+    }
+    &.btn-lg {
+        &.btn-circle {
+            border-radius: 100%;
+            padding: $btn-lg-circle-padding;
+        }
+    }
+}

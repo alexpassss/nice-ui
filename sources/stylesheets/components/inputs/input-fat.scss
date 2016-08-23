@@ -1,0 +1,18 @@
+.input {
+    &.input-fat {
+        border-width: $input-fat-border-width;
+        padding: $input-md-fat-padding-top-bottom $input-md-fat-padding-left-right;
+        &.input-xs {
+            padding: $input-xs-fat-padding-top-bottom $input-xs-fat-padding-left-right;
+        }
+        &.input-sm {
+            padding: $input-sm-fat-padding-top-bottom $input-sm-fat-padding-left-right;
+        }
+        &.input-md {
+            padding: $input-md-fat-padding-top-bottom $input-md-fat-padding-left-right;
+        }
+        &.input-lg {
+            padding: $input-lg-fat-padding-top-bottom $input-lg-fat-padding-left-right;
+        }
+    }
+}

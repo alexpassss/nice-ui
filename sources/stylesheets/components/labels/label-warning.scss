@@ -1,0 +1,10 @@
+.label {
+    &.label-warning {
+        background: $color-warning;
+        &.label-bordered,
+        &.label-bordered-fat {
+            border-color: $color-warning;
+            color: $color-warning;
+        }
+    }
+}

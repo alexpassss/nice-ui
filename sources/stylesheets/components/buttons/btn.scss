@@ -1,0 +1,71 @@
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 300ms ease-out;
+    font-size: $btn-font-size;
+    line-height: $btn-line-height;
+    padding: $btn-padding-top-bottom $btn-padding-left-right;
+    background: $color-first;
+    color: $color-extra-dark;
+    &:hover {
+        background: $color-fourth;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background: $color-second;
+    }
+    &.btn-lg {
+        font-size: $btn-lg-font-size;
+        line-height: $btn-lg-line-height;
+        padding: $btn-lg-padding-top-bottom $btn-lg-padding-left-right;
+        &.border-bottom {
+            padding-bottom: $btn-lg-padding-top-bottom - $btn-border-bottom;
+        }
+        &.btn-default {
+            padding: $btn-lg-padding-top-bottom - $btn-default-border $btn-lg-padding-left-right;
+        }
+    }
+    &.btn-md {
+        font-size: $btn-md-font-size;
+        line-height: $btn-md-line-height;
+        padding: $btn-md-padding-top-bottom $btn-md-padding-left-right;
+        &.border-bottom {
+            padding-bottom: $btn-md-padding-top-bottom - $btn-border-bottom;
+        }
+        &.btn-default {
+            padding: $btn-md-padding-top-bottom - $btn-default-border $btn-md-padding-left-right;
+        }
+    }
+    &.btn-sm {
+        font-size: $btn-sm-font-size;
+        line-height: $btn-sm-line-height;
+        padding: $btn-sm-padding-top-bottom $btn-sm-padding-left-right;
+        &.border-bottom {
+            padding-bottom: $btn-sm-padding-top-bottom - $btn-border-bottom;
+        }
+        &.btn-default {
+            padding: $btn-sm-padding-top-bottom - $btn-default-border $btn-sm-padding-left-right;
+        }
+    }
+    &.btn-xs {
+        font-size: $btn-xs-font-size;
+        line-height: $btn-xs-line-height;
+        padding: $btn-xs-padding-top-bottom $btn-xs-padding-left-right;
+        &.border-bottom {
+            padding-bottom: $btn-xs-padding-top-bottom - $btn-border-bottom;
+        }
+        &.btn-default {
+            padding: $btn-xs-padding-top-bottom - $btn-default-border $btn-xs-padding-left-right;
+        }
+    }
+}

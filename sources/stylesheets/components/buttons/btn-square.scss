@@ -1,0 +1,25 @@
+.btn {
+    &.btn-square {
+        padding: $btn-md-square-padding;
+    }
+    &.btn-xs {
+        &.btn-square {
+            padding: $btn-xs-square-padding;
+        }
+    }
+    &.btn-sm {
+        &.btn-square {
+            padding: $btn-sm-square-padding;
+        }
+    }
+    &.btn-md {
+        &.btn-square {
+            padding: $btn-md-square-padding;
+        }
+    }
+    &.btn-lg {
+        &.btn-square {
+            padding: $btn-lg-square-padding;
+        }
+    }
+}

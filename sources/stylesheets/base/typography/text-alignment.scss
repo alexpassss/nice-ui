@@ -1,0 +1,66 @@
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media only screen and (max-width: $xs-width) {
+	.xs {
+		&-text-center {
+			text-align: center;
+		}
+		&-text-right {
+			text-align: right;
+		}
+		&-text-left {
+			text-align: left;
+		}
+        &-text-justify {
+            text-align: justify;
+        }
+	}
+}
+
+@media only screen and (min-width: $xs-width) {
+    .sm {
+		&-text-center {
+			text-align: center ;
+		}
+		&-text-right {
+			text-align: right ;
+		}
+		&-text-left {
+			text-align: left ;
+		}
+        &-text-justify {
+            text-align: justify;
+        }
+	}
+}
+
+@media only screen and (min-width: $md-width) {
+    .md {
+        &-text-center {
+			text-align: center;
+		}
+		&-text-right {
+			text-align: right;
+		}
+		&-text-left {
+			text-align: left;
+		}
+        &-text-justify {
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.input {
+    &.has-error {
+        border-color: $color-danger;
+        color: $color-danger;
+        &:hover {
+            border-color: $color-danger-light;
+        }
+        &:focus {
+            border-color: $color-danger-dark;
+        }
+    }
+}

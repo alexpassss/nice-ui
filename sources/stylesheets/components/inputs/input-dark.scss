@@ -1,0 +1,13 @@
+.input {
+    &.input-dark {
+        border-color: $color-dark;
+        &:hover {
+            border-color: $color-extra-dark;
+            color: $color-extra-dark;
+        }
+        &:focus {
+            color: $color-extra-dark;
+            border-color: $color-extra-dark;
+        }
+    }
+}

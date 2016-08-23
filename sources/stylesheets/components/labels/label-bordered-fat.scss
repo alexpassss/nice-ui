@@ -1,0 +1,11 @@
+.label {
+    &.label-bordered-fat {
+        padding: $label-bordered-fat-padding-top-bottom $label-bordered-fat-padding-left-right;
+        border: $label-bordered-fat-border-width solid $color-first;
+        background: $color-white;
+        color: $color-first;
+        &.transparent {
+            background: transparent;
+        }
+    }
+}

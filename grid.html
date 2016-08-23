@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>QHQ UI - Grid</title>
+        <link rel="stylesheet" href="lib/dist/qhq-ui.min.css" media="screen" title="no title" charset="utf-8">
+        <style media="screen">
+        pre {
+            padding: 0;
+            border: 1px solid #e6e6e6;
+            border-left-width: 5px;
+            margin: 1.6em 0;
+            font-size: .875em;
+            background: #fcfcfc;
+            white-space: pre;
+            word-wrap: normal;
+        }
+
+        xmp {
+            margin: 0;
+        }
+
+        code {
+            color: #007FFF;
+        }
+
+        .uik-nav a,
+        .uik-nav span {
+            display: block;
+        }
+
+        .uik-nav span {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .uik-box {
+            position: relative;
+            box-sizing: border-box;
+            min-height: 1rem;
+            padding: 1rem;
+            margin-bottom: 0;
+            background: #2DAFBC;
+            border: 1px solid #FFF;
+            border-radius: 2px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .uik-box.large {
+            min-height: 6rem;
+        }
+
+        .no-margin-bottom {
+            margin: 0 !important;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <div class="col-xs-12">
+                    <h1 class="color-first">Grid</h1>
+                </div>
+            </header>
+            <article class="row">
+                <div class="col-xs-12">
+                    <p class="line-h-extra-large">
+                        WUI includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device
+                        or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins
+                        for generating more semantic layouts.
+                    </p>
+                    <section id="introduction">
+                        <h4>Introduction</h4>
+                        <p class="line-h-extra-large">
+                            Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:
+                            <ul>
+                                <li>Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+                                    Also you can add helper class <b>no-padding</b> to remove paddings from rows if necessary.</li>
+                                <li>Use rows to create horizontal groups of columns.</li>
+                                <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+                                <li>Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+                                <li>Columns create gutters (gaps between column content) via padding. That padding is <b>NOT</b> offset in rows for the first and last column via negative margin on .rows. like in Bootstrap.
+                                If you need remove paddings, please use <a href="#">helpers</a> for it.</li>
+                                <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</li>
+                                <li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+                                <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices.
+                                    Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices
+                                    if a .col-lg-* class is not present.</li>
+                            </ul>
+                            Look to the examples for applying these principles to your code.
+                        </p>
+                    </section>
+                    <section id="gridOptions">
+                        <h4>Grid options</h4>
+                        <p>
+                            See how aspects of the WUI grid system work across multiple devices with a handy table.
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+                                    <th> Small devices <small>Tablets (≥768px)</small> </th>
+                                    <th> Medium devices <small>Desktops (≥992px)</small> </th>
+                                    <th> Large devices <small>Desktops (≥1200px)</small> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Grid behavior</th>
+                                    <td>Horizontal at all times</td>
+                                    <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Container width</th>
+                                    <td>None (auto)</td>
+                                    <td>750px</td>
+                                    <td>970px</td>
+                                    <td>1170px</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Class prefix</th>
+                                    <td><code>.col-xs-</code></td>
+                                    <td><code>.col-sm-</code></td>
+                                    <td><code>.col-md-</code></td>
+                                    <td><code>.col-lg-</code></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row"># of columns</th>
+                                    <td colspan="4">12</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Column width</th>
+                                    <td class="text-muted">Auto</td>
+                                    <td>~62px</td>
+                                    <td>~81px</td>
+                                    <td>~97px</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Gutter width</th>
+                                    <td colspan="4">30px (15px on each side of a column)</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Nestable</th>
+                                    <td colspan="4">Yes</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Offsets</th>
+                                    <td colspan="4">Yes</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap" scope="row">Column ordering</th>
+                                    <td colspan="4">Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="responsive">
+                        <h4>Responsive</h4>
+                        <p>
+                            Responsive modifiers enable specifying different column sizes, offsets, alignment and
+                            distribution at xs, sm, md & lg viewport widths.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3">
+                                <div class="uik-box"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-6">
+                                <div class="uik-box"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                <div class="uik-box"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                <div class="uik-box"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-8">
+                                <div class="uik-box"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                <div class="uik-box"></div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-xs-12
+                                                col-sm-8
+                                                col-md-6
+                                                col-lg-4">
+                                        <!-- content -->
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="offsets">
+                        <h4>Offsets</h4>
+                        <p>
+                            Offset a column (col-xs-offset-*, col-sm-offset-*, col-md-offset-*, col-lg-offset-*)
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-offset-11 col-xs-1"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-10 col-xs-2"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-9 col-xs-3"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-8 col-xs-4"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-7 col-xs-5"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-6 col-xs-6"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-5 col-xs-7"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-4 col-xs-8"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-3 col-xs-9"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-2 col-xs-10"><div class="uik-box"></div></div>
+                            <div class="col-xs-offset-1 col-xs-11"><div class="uik-box"></div></div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-xs-offset-3 col-xs-9 col-md-offset-6 col-md-6"></div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="autoWidth">
+                        <h4>Auto width</h4>
+                        <p>
+                            Add any number of auto sizing columns to a row. Let the grid figure it out. (You can use col-xs, col-sm, col-md, col-lg)
+                        </p>
+                        <div class="row">
+                            <div class="col-xs"><div class="uik-box"></div></div>
+                            <div class="col-xs"><div class="uik-box"></div></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs"><div class="uik-box"></div></div>
+                            <div class="col-xs"><div class="uik-box"></div></div>
+                            <div class="col-xs"><div class="uik-box"></div></div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-xs"><div class="uik-box"></div></div>
+                                    <div class="col-xs"><div class="uik-box"></div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs"><div class="uik-box"></div></div>
+                                    <div class="col-xs"><div class="uik-box"></div></div>
+                                    <div class="col-xs"><div class="uik-box"></div></div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="alignment">
+                        <h4>Alignment</h4>
+                        <p>
+                            Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column.
+                            (You can use start/center/end-xs/sm/md/lg).
+                        </p>
+                        <h5>.start-</h5>
+                        <div class="uik-box">
+                            <div class="row start-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box  no-margin-bottom">
+                                        start
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row start-xs">
+                                    <div class="col-xs-6">
+                                        start
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.center-</h5>
+                        <div class="uik-box">
+                            <div class="row center-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box  no-margin-bottom">
+                                        center
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row center-xs">
+                                    <div class="col-xs-6">
+                                        center
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.end-</h5>
+                        <div class="uik-box">
+                            <div class="row end-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box  no-margin-bottom">
+                                        end
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row end-xs">
+                                    <div class="col-xs-6">
+                                        end
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.top-</h5>
+                        <div class="uik-box">
+                            <div class="row top-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box large no-margin-bottom"></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="uik-box  no-margin-bottom">
+                                        top
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row top-xs">
+                                    <div class="col-xs-6">
+                                        top
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.middle-</h5>
+                        <div class="uik-box">
+                            <div class="row middle-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box large no-margin-bottom"></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="uik-box no-margin-bottom">middle</div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row middle-xs">
+                                    <div class="col-xs-6">
+                                        middle
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.bottom-</h5>
+                        <div class="uik-box">
+                            <div class="row bottom-xs">
+                                <div class="col-xs-6">
+                                    <div class="uik-box large no-margin-bottom"></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="uik-box no-margin-bottom">bottom</div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row bottom-xs">
+                                    <div class="col-xs-6">
+                                        bottom
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="distribution">
+                        <h4>Distribution</h4>
+                        <p>
+                            Add classes to distribute the contents of a row or column.
+                        </p>
+                        <h5>.around-</h5>
+                        <div class="uik-box">
+                            <div class="row around-xs">
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        around
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        around
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        around
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row around-xs">
+                                    <div class="col-xs-2">
+                                        around
+                                    </div>
+                                    <div class="col-xs-2">
+                                        around
+                                    </div>
+                                    <div class="col-xs-2">
+                                        around
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.between-</h5>
+                        <div class="uik-box">
+                            <div class="row between-xs">
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        between
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        between
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="uik-box no-margin-bottom">
+                                        between
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row between-xs">
+                                    <div class="col-xs-2">
+                                        between
+                                    </div>
+                                    <div class="col-xs-2">
+                                        between
+                                    </div>
+                                    <div class="col-xs-2">
+                                        between
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="reordering">
+                        <h4>Reordering</h4>
+                        <p>
+                            Add classes to reorder columns.
+                        </p>
+                        <h5>.first-</h5>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div class="uik-box no-margin-bottom">
+                                    1
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="uik-box no-margin-bottom">
+                                    2
+                                </div>
+                            </div>
+                            <div class="col-xs-2 first-xs">
+                                <div class="uik-box no-margin-bottom">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        1
+                                    </div>
+                                    <div class="col-xs-2">
+                                        2
+                                    </div>
+                                    <div class="col-xs-2 first-xs">
+                                        3
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                        <h5>.last-</h5>
+                        <div class="row">
+                            <div class="col-xs-2 last-xs">
+                                <div class="uik-box no-margin-bottom">
+                                    1
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="uik-box no-margin-bottom">
+                                    2
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="uik-box no-margin-bottom">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-xs-2 last-xs">
+                                        1
+                                    </div>
+                                    <div class="col-xs-2">
+                                        2
+                                    </div>
+                                    <div class="col-xs-2">
+                                        3
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                    <section id="reversing">
+                        <h4>Reversing</h4>
+                        <h5>.reverse</h5>
+                        <div class="row between-xs reverse">
+                            <div class="col-xs-2">
+                                <div class="uik-box">
+                                    1
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="uik-box">
+                                    2
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="uik-box">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+                            <xmp>
+                                <div class="row reverse">
+                                    <div class="col-xs-2">
+                                        1
+                                    </div>
+                                    <div class="col-xs-2">
+                                        2
+                                    </div>
+                                    <div class="col-xs-2">
+                                        3
+                                    </div>
+                                </div>
+                            </xmp>
+                        </pre>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>

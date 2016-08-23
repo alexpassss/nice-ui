@@ -1,0 +1,12 @@
+.input {
+    &.has-warning {
+        border-color: $color-warning;
+        color: $color-warning;
+        &:hover {
+            border-color: $color-warning-light;
+        }
+        &:focus {
+            border-color: $color-warning-dark;
+        }
+    }
+}

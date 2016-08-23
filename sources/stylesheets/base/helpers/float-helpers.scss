@@ -1,0 +1,19 @@
+.to-right {
+	float: right;
+}
+
+.to-center {
+	margin: 0 auto;
+}
+
+.to-left {
+	float: left;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

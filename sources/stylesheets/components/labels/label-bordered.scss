@@ -1,0 +1,11 @@
+.label {
+    &.label-bordered {
+        padding: $label-bordered-padding-top-bottom $label-bordered-padding-left-right;
+        border: $label-bordered-border-width solid $color-first;
+        background: $color-white;
+        color: $color-first;
+        &.transparent {
+            background: transparent;
+        }
+    }
+}

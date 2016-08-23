@@ -1,0 +1,17 @@
+.btn {
+    &.btn-rounded {
+        border-radius: $xs-border-radius;
+        &-sm {
+            border-radius: $sm-border-radius;
+        }
+        &-md {
+            border-radius: $md-border-radius;
+        }
+        &-lg {
+            border-radius: $lg-border-radius;
+        }
+        &-elg {
+            border-radius: $elg-border-radius;
+        }
+    }
+}

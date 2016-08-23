@@ -1,0 +1,36 @@
+$label-padding-top-bottom: 0.2rem;
+$label-padding-left-right: 0.25rem;
+$label-font-size: 0.75rem;
+$label-line-height: 0.75rem;
+
+$label-xs-padding-top-bottom: 0.0625rem;
+$label-xs-padding-left-right: 0.125rem;
+$label-xs-font-size: 0.55rem;
+$label-xs-line-height: 0.55rem;
+
+$label-sm-padding-top-bottom: 0.125rem;
+$label-sm-padding-left-right: 0.125rem;
+$label-sm-font-size: 0.65rem;
+$label-sm-line-height: 0.65rem;
+
+$label-lg-padding-top-bottom: 0.3rem;
+$label-lg-padding-left-right: 0.5rem;
+$label-lg-font-size: 0.85rem;
+$label-lg-line-height: 0.85rem;
+
+$label-rounded-xs-border-radius: 0.125rem;
+$label-rounded-sm-border-radius: 0.25rem;
+$label-rounded-md-border-radius: 0.375rem;
+$label-rounded-lg-border-radius: 0.5rem;
+
+$label-bordered-border-width: 0.0625rem;
+$label-bordered-padding-top-bottom: 0.0625rem;
+$label-bordered-padding-left-right: $label-padding-left-right - $label-bordered-border-width;
+
+$label-bordered-fat-border-width: 0.125rem;
+$label-bordered-fat-padding-top-bottom: 0.0625rem;
+$label-bordered-fat-padding-left-right: $label-padding-left-right - $label-bordered-fat-border-width;
+
+$label-size-inherit-padding-top-bottom: .3em;
+$label-size-inherit-padding-left-right: .3em;
+$label-size-inherit-font-size: .75em;

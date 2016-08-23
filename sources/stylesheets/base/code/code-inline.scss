@@ -1,0 +1,15 @@
+code {
+    padding: $code-padding-top-bottom $code-padding-left-right;
+    font-size: $code-font-size;
+    color: $color-extra-dark;
+    background-color: $color-light;
+    border-radius: $code-border-radius;
+}
+
+kbd {
+    padding: $code-padding-top-bottom $code-padding-left-right;
+    font-size: $code-font-size;
+    color: $color-white;
+    background-color: $color-extra-dark;
+    border-radius: $code-border-radius;
+}

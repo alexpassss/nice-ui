@@ -1,0 +1,14 @@
+.btn {
+    &.btn-to-success {
+        color: $color-white;
+        &:hover {
+            background: $color-success-light;
+        }
+        &:active {
+            background: $color-success-dark;
+        }
+        &.inverse {
+            color: $color-extra-dark;
+        }
+    }
+}

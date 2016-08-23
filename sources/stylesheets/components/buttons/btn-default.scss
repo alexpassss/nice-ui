@@ -1,0 +1,15 @@
+.btn {
+    &.btn-default {
+        background: $color-white;
+        color: $color-second;
+        border: $btn-default-border solid $color-second;
+        &:hover {
+            color: $color-first;
+            border: $btn-default-border solid $color-first;
+        }
+        &:active {
+            color: $color-extra-dark;
+            background: $color-first;
+        }
+    }
+}

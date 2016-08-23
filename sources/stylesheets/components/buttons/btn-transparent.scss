@@ -1,0 +1,14 @@
+.btn {
+    &.btn-transparent {
+        background: transparent;
+        color: $color-first;
+        &:hover {
+            color: $color-fourth;
+            background: $color-light-transparent;
+        }
+        &:active {
+            color: $color-second;
+            background: $color-extra-dark-transparent;
+        }
+    }
+}

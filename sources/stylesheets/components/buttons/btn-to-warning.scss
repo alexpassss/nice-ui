@@ -1,0 +1,14 @@
+.btn {
+    &.btn-to-warning {
+        color: $color-white;
+        &:hover {
+            background: $color-warning-light;
+        }
+        &:active {
+            background: $color-warning-dark;
+        }
+        &.inverse {
+            color: $color-extra-dark;
+        }
+    }
+}

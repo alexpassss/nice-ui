@@ -1,0 +1,31 @@
+.label {
+    display: inline-block;
+    padding: $label-padding-top-bottom $label-padding-left-right;
+    font-size: $label-font-size;
+    line-height: $label-line-height;
+    color: $color-white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background: $color-first;
+    &.label-xs {
+        padding: $label-xs-padding-top-bottom $label-xs-padding-left-right;
+        font-size: $label-xs-font-size;
+        line-height: $label-xs-line-height;
+    }
+    &.label-sm {
+        padding: $label-sm-padding-top-bottom $label-sm-padding-left-right;
+        font-size: $label-sm-font-size;
+        line-height: $label-sm-line-height;
+    }
+    &.label-md {
+        padding: $label-padding-top-bottom $label-padding-left-right;
+        font-size: $label-font-size;
+        line-height: $label-line-height;
+    }
+    &.label-lg {
+        padding: $label-lg-padding-top-bottom $label-lg-padding-left-right;
+        font-size: $label-lg-font-size;
+        line-height: $label-lg-line-height;
+    }
+}

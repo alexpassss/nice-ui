@@ -1,0 +1,7 @@
+.badge {
+    &.size-inherit {
+        padding: $badge-size-inherit-padding;
+        font-size: $badge-size-inherit-font-size;
+        line-height: $badge-size-inherit-line-height;
+    }
+}

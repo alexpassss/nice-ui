@@ -1,0 +1,32 @@
+.list-unstyled {
+    list-style: none;
+}
+
+.list-inline {
+    li {
+        display: inline-block;
+    }
+}
+
+dl {
+    &.dl-horizontal {
+        dt {
+            float: left;
+            width: 10rem;
+            overflow: hidden;
+            clear: left;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        dd {
+            margin-left: 11.25rem;
+        }
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 0;
+    }
+}
