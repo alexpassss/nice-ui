@@ -1,0 +1,73 @@
+#main-container {
+	margin: 20px 20px 20px 200px;
+	min-height: 100%;
+	border: 2px solid red;
+}
+aside {
+	position: fixed;
+	width: 180px;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	background: #ccc;
+	padding: 10px;
+	z-index: 10;
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+li {
+	background-color: orange;
+}
+.content-box {
+	position: relative;
+	display: none;
+	border: 1px solid green;
+}
+.row {
+	position: relative;
+	margin: 40px 0 0 0;
+	background-color: lightgreen !important;
+}
+.row>div {
+	min-height: 100px;
+	background-color: lightgrey;
+	border: 1px solid black;
+}
+.ui-sortable-placeholder {
+	border: 1px dashed grey !important;
+	background-color: lightyellow !important;
+	visibility: visible !important;
+}
+.sortable>* {
+	padding-top: 25px;
+}
+.sortable>*:before {
+	background-color: #F5F5F5;
+	border: 1px solid #DDD;
+	color: #9DA0A4;
+	content: "You can drag it!";
+	font-size: 10px;
+	font-weight: lighter;
+	right: 0;
+	padding: 3px;
+	position: absolute;
+	top: 0;
+}
+.some-list {
+	position: relative;
+	border: 1px solid #eee;
+	width: 142px;
+	min-height: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0 0 0;
+	float: left;
+	margin-right: 10px;
+}
+.some-list li {
+	position: relative;
+	margin: 0 5px 5px 5px;
+	padding: 5px;
+	font-size: 1.2em;
+	width: 120px;
+}

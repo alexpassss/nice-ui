@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drag'n'Drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="scripts.js"></script>
+</head>
+
+<body>
+	<aside>
+		<div id="accordion">
+			<h3>Containers</h3>
+			<div>
+				<ul class="elems-list">
+					<li class="drag-new-elem draggable-block">
+						<p>container 12</p>
+						<div class="content-box">
+							<div class="row sortable connectedSortable">
+								<div class="col-md-12 sortable connectedSortable">.col-md-12</div>
+							</div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-block">
+						<p>container 4 4 4</p>
+						<div class="content-box">
+							<div class="row sortable connectedSortable">
+								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<h3>Elements</h3>
+			<div>
+				<ul class="elems-list">
+					<li class="drag-new-elem draggable-elem">
+						<p>header</p>
+						<div class="content-box">
+							<h3>h3 heading</h3>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>inline-form</p>
+						<div class="content-box">
+							<form class="form-inline">
+								<div class="form-group">
+									<label for="exampleInputName2">Name</label>
+									<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail2">Email</label>
+									<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+								</div>
+								<button type="submit" class="btn btn-default">Send invitation</button>
+							</form>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>button</p>
+						<div class="content-box">
+							<button type="button" class="btn btn-primary btn-sm">Small button</button>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>input</p>
+						<div class="content-box">
+							<input type="text" class="form-control" placeholder="Text input">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<div id="main-container" class="sortable connectedSortable">
+		<div class="row sortable connectedSortable">
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+		</div>
+		<div class="row sortable connectedSortable">
+			<div class="col-md-8 sortable connectedSortable">.col-md-8</div>
+			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+		</div>
+		<div class="row sortable connectedSortable">
+			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+		</div>
+		<div class="row sortable connectedSortable">
+			<div class="col-md-6 sortable connectedSortable">.col-md-6</div>
+			<div class="col-md-6 sortable connectedSortable">.col-md-6</div>
+		</div>
+		<ul class="some-list sortable connectedSortable">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+		<ul class="some-list sortable connectedSortable">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+	</div>
+</body>
+
+</html>
