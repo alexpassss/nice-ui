@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Drag'n'Drop</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -14,26 +15,91 @@
 
 <body>
 	<aside>
+		<div class="trash">
+			<h6>TRASH</h6>
+			<p>drop element here for delete</p>
+			<div class="trash__notification">You have deleted an element</div>
+		</div>
 		<div id="accordion">
-			<h3>Containers</h3>
+			<h3>Blocks</h3>
 			<div>
 				<ul class="elems-list">
-					<li class="drag-new-elem draggable-block">
-						<p>container 12</p>
+					<li class="drag-new-elem draggable-elem">
+						<p>row</p>
 						<div class="content-box">
-							<div class="row sortable connectedSortable">
-								<div class="col-md-12 sortable connectedSortable">.col-md-12</div>
-							</div>
+							<div class="row sortable connectedSortable"></div>
 						</div>
 					</li>
-					<li class="drag-new-elem draggable-block">
-						<p>container 4 4 4</p>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 12</p>
 						<div class="content-box">
-							<div class="row sortable connectedSortable">
-								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
-								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
-								<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
-							</div>
+								<div class="column col-md-12 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 11</p>
+						<div class="content-box">
+								<div class="column col-md-11 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 10</p>
+						<div class="content-box">
+								<div class="column col-md-10 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 9</p>
+						<div class="content-box">
+								<div class="column col-md-9 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 8</p>
+						<div class="content-box">
+								<div class="column col-md-8 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 7</p>
+						<div class="content-box">
+								<div class="column col-md-7 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 6</p>
+						<div class="content-box">
+								<div class="column col-md-6 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 5</p>
+						<div class="content-box">
+								<div class="column col-md-5 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 4</p>
+						<div class="content-box">
+								<div class="column col-md-4 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 3</p>
+						<div class="content-box">
+								<div class="column col-md-3 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 2</p>
+						<div class="content-box">
+								<div class="column col-md-2 sortable connectedSortable"></div>
+						</div>
+					</li>
+					<li class="drag-new-elem draggable-elem">
+						<p>column 1</p>
+						<div class="content-box">
+								<div class="column col-md-1 sortable connectedSortable"></div>
 						</div>
 					</li>
 				</ul>
@@ -81,31 +147,31 @@
 	</aside>
 	<div id="main-container" class="sortable connectedSortable">
 		<div class="row sortable connectedSortable">
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
-			<div class="col-md-1 sortable connectedSortable">.col-md-1</div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
+			<div class="column col-md-1 sortable connectedSortable"></div>
 		</div>
 		<div class="row sortable connectedSortable">
-			<div class="col-md-8 sortable connectedSortable">.col-md-8</div>
-			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+			<div class="column col-md-8 sortable connectedSortable"></div>
+			<div class="column col-md-4 sortable connectedSortable"></div>
 		</div>
 		<div class="row sortable connectedSortable">
-			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
-			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
-			<div class="col-md-4 sortable connectedSortable">.col-md-4</div>
+			<div class="column col-md-4 sortable connectedSortable"></div>
+			<div class="column col-md-4 sortable connectedSortable"></div>
+			<div class="column col-md-4 sortable connectedSortable"></div>
 		</div>
 		<div class="row sortable connectedSortable">
-			<div class="col-md-6 sortable connectedSortable">.col-md-6</div>
-			<div class="col-md-6 sortable connectedSortable">.col-md-6</div>
+			<div class="column col-md-6 sortable connectedSortable"></div>
+			<div class="column col-md-6 sortable connectedSortable"></div>
 		</div>
 		<ul class="some-list sortable connectedSortable">
 			<li>Item 1</li>

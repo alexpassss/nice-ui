@@ -1,8 +1,7 @@
-#main-container {
-	margin: 20px 20px 20px 200px;
-	min-height: 100%;
-	border: 2px solid red;
-}
+/*SIDEBAR STARTS HERE*/
+/*SIDEBAR STARTS HERE*/
+/*SIDEBAR STARTS HERE*/
+
 aside {
 	position: fixed;
 	width: 180px;
@@ -14,44 +13,171 @@ aside {
 	z-index: 10;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
+	overflow-y: auto;
+}
+.trash {
+	position: relative;
+	margin: 0 auto;
+	padding: 30px;
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 8px;
+	text-align: center;
+}
+.garbage-bin-opened {
+	-webkit-box-shadow: -10px -10px 8px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -10px -10px 8px 2px rgba(0,0,0,0.75);
+	box-shadow: -10px -10px 8px 2px rgba(0,0,0,0.75);
+}
+.trash__notification {
+	display: none;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	padding: 30px;
+	width: 140px;
+	height: 140px;
+	background-color: orange;
+}
+#accordion {
+	margin: 26px auto;
+}
+.ui-accordion-header {
+	border-radius: 8px 8px 0 0;
+	outline: none;
+}
+.ui-accordion-header-active {
+	border: 1px solid orange;
+	background-color: orange;
+}
+#accordion .ui-accordion-content {
+	padding: 20px;
+	border: 1px solid orange;
+}
+.elems-list {
+	padding: 0;
+	list-style-type: none;
+}
+.drag-new-elem {
+	padding: 0 10px;
+	background-color: lightgreen;
+}
+.content-box {
+	display: none;
+}
+
+/*SIDEBAR ENDS*/
+/*SIDEBAR ENDS*/
+/*SIDEBAR ENDS*/
+
+/*MAIN CONTAINER STARTS HERE*/
+/*MAIN CONTAINER STARTS HERE*/
+/*MAIN CONTAINER STARTS HERE*/
+
+#main-container {
+	margin: 20px 20px 20px 200px;
+	min-height: 200px;
+	border: 3px solid green;
 }
 li {
 	background-color: orange;
-}
-.content-box {
-	position: relative;
-	display: none;
-	border: 1px solid green;
+	list-style-type: none;
+	text-align: center;
 }
 .row {
 	position: relative;
 	margin: 40px 0 0 0;
+	border: 1px solid black;
 	background-color: lightgreen !important;
 }
-.row>div {
+.row:before {
+	content: "row";
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 3px 5px;
+	border: 1px solid #DDD;
+	border-radius: 0 0 5px 0;
+	background-color: #F5F5F5;
+	color: #9DA0A4;
+	font-size: 10px;
+	font-weight: lighter;
+}
+.column {
 	min-height: 100px;
 	background-color: lightgrey;
-	border: 1px solid black;
+	border: 1px dotted black;
+}
+.column:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 3px 5px;
+	border: 1px solid #DDD;
+	border-radius: 0 0 5px 0;
+	background-color: #F5F5F5;
+	color: #9DA0A4;
+	font-size: 10px;
+	font-weight: lighter;
+}
+.col-md-12:before {
+	content: "column 12";
+}
+.col-md-11:before {
+	content: "column 11";
+}
+.col-md-10:before {
+	content: "column 10";
+}
+.col-md-9:before {
+	content: "column 9";
+}
+.col-md-8:before {
+	content: "column 8";
+}
+.col-md-7:before {
+	content: "column 7";
+}
+.col-md-6:before {
+	content: "column 6";
+}
+.col-md-5:before {
+	content: "column 5";
+}
+.col-md-4:before {
+	content: "column 4";
+}
+.col-md-3:before {
+	content: "column 3";
+}
+.col-md-2:before {
+	content: "column 2";
+}
+.col-md-1:before {
+	content: "column 1";
 }
 .ui-sortable-placeholder {
 	border: 1px dashed grey !important;
 	background-color: lightyellow !important;
 	visibility: visible !important;
 }
-.sortable>* {
-	padding-top: 25px;
+.sortable > * {
+	padding-top: 30px;
 }
-.sortable>*:before {
-	background-color: #F5F5F5;
-	border: 1px solid #DDD;
-	color: #9DA0A4;
-	content: "You can drag it!";
-	font-size: 10px;
-	font-weight: lighter;
-	right: 0;
-	padding: 3px;
+/*.sortable > *:before,*/
+.sortable > a.delete {
 	position: absolute;
 	top: 0;
+	padding: 3px;
+}
+/*.sortable > *:before {
+	content: "You can drag it!";
+	left: 0;
+}*/
+.sortable > * > a {
+	right: 0;
 }
 .some-list {
 	position: relative;
