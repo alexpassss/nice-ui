@@ -2,19 +2,14 @@ $(function() {
 
   $('#accordion').accordion({
     collapsible: true
-  })
-    .hover(function(event) {},
-           function(event) {});
+  });
 
   var sortableOptions = {
       helper: 'clone',
       connectWith: '.connectedSortable',
-      tolerance: 'pointer',
-      change: function(event, ui) {
-      }
-    };
-  var $sortable = $('.sortable');
-  $sortable.sortable(sortableOptions);
+      tolerance: 'pointer'
+  };
+  $('.sortable').sortable(sortableOptions);
   //   .disableSelection();
 
 
@@ -65,12 +60,19 @@ $(function() {
       $('.trash').removeClass('garbage-bin-opened');
     },
     drop: function(event, ui) {
-      $('.trash').removeClass('garbage-bin-opened');
-      
-      var $notification = $('.trash__notification');
+      var $trash = $('.trash');
 
-      ui.draggable.remove();
+      if (ui.draggable.hasClass('draggable-elem')) {
+        $trash.removeClass('garbage-bin-opened');
+        return;
+      }
+
+      $trash.removeClass('garbage-bin-opened');      
+      var $notification = $('.trash__notification');
+      
+      ui.draggable.remove();      
       $notification.fadeIn();
+
       reloadSortable();
 
       setTimeout(function() {
@@ -80,11 +82,10 @@ $(function() {
   });
 
   function reloadSortable() {
-    $sortable = $('.sortable');
-    $sortable
-      .sortable('widget')
-      .sortable('destroy');
-    $sortable.sortable(sortableOptions);
+    $('.sortable')
+      .sortable()
+      .sortable('destroy')
+      .sortable(sortableOptions);
   }
 
   $('ul, li').disableSelection();
